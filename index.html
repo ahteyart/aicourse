@@ -323,6 +323,19 @@
     </div>
   </section>
 
+  <!-- ======== LIGHTBOX ======== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="作品放大檢視">
+    <button class="lightbox__close" id="lightboxClose" aria-label="關閉">&#10005;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="上一張">&#8249;</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="下一張">&#8250;</button>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__content">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+      <p class="lightbox__counter" id="lightboxCounter"></p>
+    </div>
+  </div>
+
   <!-- ======== FOOTER ======== -->
   <footer class="footer">
     <div class="container footer__inner">
