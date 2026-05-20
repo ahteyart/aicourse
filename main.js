@@ -47,22 +47,6 @@ function injectFadeInStyles() {
       opacity: 1;
       transform: translateY(0);
     }
-    .artwork__item {
-      position: relative;
-      overflow: hidden;
-    }
-    .artwork__caption {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 24px 14px 12px;
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-    .artwork__item:hover .artwork__caption { opacity: 1; }
   `;
   document.head.appendChild(style);
 }

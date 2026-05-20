@@ -489,6 +489,7 @@ ul { list-style: none; }
 }
 
 .artwork__item {
+  position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
   aspect-ratio: 4/3;
@@ -507,22 +508,19 @@ ul { list-style: none; }
   object-fit: cover;
 }
 
-.artwork__item--placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-style: dashed;
-  border-color: rgba(108,71,255,0.25);
+
+.artwork__caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 24px 14px 12px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
 }
-
-.artwork__placeholder-inner {
-  text-align: center;
-  color: var(--text-muted);
-}
-
-.artwork__placeholder-icon { font-size: 2.5rem; display: block; margin-bottom: 10px; }
-
-.artwork__placeholder-inner p { font-size: 0.85rem; }
+.artwork__item:hover .artwork__caption { opacity: 1; }
 
 .artwork__note {
   text-align: center;
@@ -629,7 +627,7 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
-.enroll__card > * { position: relative; z-index: 1; }
+.enroll__card > *:not(.enroll__bg-blur) { position: relative; z-index: 1; }
 
 .enroll__title {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
