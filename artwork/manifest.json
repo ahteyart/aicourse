@@ -1,0 +1,12 @@
+{
+  "images": [
+    { "file": "Branding_Logos_01.jpeg", "caption": "品牌 Logo 設計" },
+    { "file": "Branding_Logos_02.jpeg", "caption": "品牌 Logo 設計" },
+    { "file": "Branding_Logos_03.jpeg", "caption": "品牌 Logo 設計" },
+    { "file": "Branding_Logos_05.jpeg", "caption": "品牌 Logo 設計" },
+    { "file": "Product_Ads_02.jpeg",    "caption": "產品電商廣告圖" },
+    { "file": "Product_Ads_03.jpeg",    "caption": "產品電商廣告圖" },
+    { "file": "Product_Ads_05.jpeg",    "caption": "產品電商廣告圖" },
+    { "file": "Product_Ads_06.jpeg",    "caption": "產品電商廣告圖" }
+  ]
+}
